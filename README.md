@@ -46,7 +46,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 1. criar o banco, rode o comando:
 
 \`\`\`sh
-mysql -u [seu_usaurio] -p meu_banco_de_dados < banco_mysql.sql
+mysql -u [seu_usaurio] -p meu_banco_de_dados < database/banco_mysql.sql
 \`\`\`
 
 ## Uso
