@@ -1,5 +1,7 @@
 
 # Alfred
+![alt text](/public/alfred.png)
+
 
 **Alfred** é uma aplicação que utiliza o Dapper como ORM para acesso a banco de dados. Este projeto tem como objetivo demonstrar como configurar e usar o Dapper em uma aplicação .NET.
 
