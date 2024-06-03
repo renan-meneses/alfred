@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: Finance
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: . # Dockerfile para seu sistema
+    restart: always
+    ports:
+      - "5289:5289" # Porta que seu sistema está exposto
+    depends_on:
+      - db
